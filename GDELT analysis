@@ -1,0 +1,34 @@
+# How Global News Attention Changes Over Time
+
+This project analyses how global news attention shifts over time using the GDELT 2.0 Global Events dataset.  
+The analysis focuses on changes in the composition of major event categories across months and presents the results through an explanatory stacked area visualisation.
+
+## Dataset
+- **Source:** GDELT 2.0 Global Events Database
+- **Access:** Google BigQuery public dataset (`gdelt-bq.gdeltv2.events`)
+- The dataset contains millions of machine-coded global news events with metadata such as event type, date, and sentiment.
+
+## Methodology
+- Monthly aggregation of global event data in Google BigQuery using SQL
+- Selection of the six most frequent event root categories
+- Remaining categories grouped into an “Other” category
+- Data cleaning and processing in Google Colab
+- Normalisation to monthly proportions to analyse composition over time
+
+## Visualisation
+- Stacked area chart showing monthly composition of global event categories
+- Designed to highlight shifts in global news focus rather than raw event volume
+- Built using Plotly for clarity and accessibility
+
+## Tools and Technologies
+- Google BigQuery
+- Google Colab
+- Python (pandas, numpy, plotly, kaleido)
+- LaTeX (report preparation)
+
+## Project Type
+Academic data analysis and visualisation project
+
+## Notes
+- The workflow is reproducible using the provided SQL queries and notebook
+- Large-scale aggregation is handled in the cloud due to dataset size
